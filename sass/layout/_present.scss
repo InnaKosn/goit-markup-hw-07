@@ -1,0 +1,35 @@
+.present-list {
+    display: flex;
+    align-items: baseline;
+}
+
+.present-elem:not(:last-child) {
+    margin-right: 30px;
+}
+
+.present-elem {
+    width: 270px;
+}
+
+.present-ikon {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+}
+
+.present-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.present-tekst {
+    font-weight: 400;
+    line-height: 1.71;
+}

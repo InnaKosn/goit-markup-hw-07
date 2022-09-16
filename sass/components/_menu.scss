@@ -1,0 +1,66 @@
+.menu {
+    display: flex;
+    column-gap: 50px;
+}
+
+.menu-link {
+    display: inline-block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+
+    transition: color var(--transition-dur-and-func);
+
+
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.menu-link.current::after {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #2196f3;
+    border-radius: 2px;
+    bottom: -1px;
+    content: "";
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.contact-elem {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+
+    transition: color var(--transition-dur-and-func);
+
+
+}
+
+.contact-icon {
+    fill: currentColor;
+}
+
+.contact-elem:hover,
+.contact-elem:focus {
+    color: var(--accent-color);
+}
