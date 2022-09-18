@@ -5,7 +5,7 @@
 
 
 
-.present-elem {
+.present__elem {
     width: 270px;
 
     &:not(:last-child) {
@@ -13,7 +13,7 @@
         }
 }
 
-.present-ikon {
+.present__ikon {
     display: flex;
     height: 120px;
     align-items: center;

@@ -21,16 +21,21 @@
   margin: -1px;
 }
 
+body {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  background-color: var(--alternativ-color);
+  color: var(--primary-color);
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
-}
-
-.current {
-  color: var(--accent-color);
 }
 
 html {
@@ -64,20 +69,6 @@ button {
 
 span {
   color: var(--secondary-color);
-}
-
-body {
-  font-family: var(--primary-font);
-  font-size: 14px;
-  background-color: var(--alternativ-color);
-  color: var(--primary-color);
-  letter-spacing: 0.03em;
-  line-height: 1.19;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .container {
@@ -308,7 +299,7 @@ body {
   column-gap: 50px;
 }
 
-.menu-link {
+.menu__link {
   display: inline-block;
   position: relative;
   padding-top: 32px;
@@ -319,10 +310,15 @@ body {
   color: var(--secondary-color);
   transition: color var(--transition-dur-and-func);
 }
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
-.menu-link .current::after {
+
+.current {
+  color: var(--accent-color);
+}
+
+.menu__link.current::after {
   display: block;
   position: absolute;
   height: 4px;
@@ -349,7 +345,7 @@ body {
   color: var(--accent-color);
 }
 
-.contact-icon {
+.contact-elem__icon {
   fill: currentColor;
 }
 
@@ -452,6 +448,11 @@ body {
   margin-left: 10px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .header-page-container {
   display: flex;
   align-items: center;
@@ -493,7 +494,7 @@ body {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -528,14 +529,14 @@ body {
   align-items: baseline;
 }
 
-.present-elem {
+.present__elem {
   width: 270px;
 }
-.present-elem:not(:last-child) {
+.present__elem:not(:last-child) {
   margin-right: 30px;
 }
 
-.present-ikon {
+.present__ikon {
   display: flex;
   height: 120px;
   align-items: center;

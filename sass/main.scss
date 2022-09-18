@@ -2,14 +2,15 @@
 @import './utils/visually-hidden';
 
 @import './base/common';
-@import './base/section.scss';
-@import './base/container';
+@import './base/reset';
 
+@import './components/container';
 @import './components/modal-btn';
 @import './components/modal-form';
 @import './components/menu';
 @import './components/join';
 @import './components/subs';
+@import './components/section';
 
 @import './layout/header';
 @import './layout/hero';
