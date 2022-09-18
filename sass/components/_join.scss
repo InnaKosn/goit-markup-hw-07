@@ -19,12 +19,12 @@
 
     transition: background-color var(--transition-dur-and-func);
 
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+        }
 }
 
-.join-link:hover,
-.join-link:focus {
-    background-color: var(--accent-color);
-}
 
 .join-icon {
     fill: var(--alternativ-color);

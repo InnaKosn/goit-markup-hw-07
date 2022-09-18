@@ -33,15 +33,15 @@
     color: var(--alternativ-color);
     cursor: pointer;
     transition: border-color var(--transition-dur-and-func);
-}
 
-.emale-form::placeholder {
+  &::placeholder {
     color: rgba(255, 255, 255, 0.6);
-}
+  }
 
-.emale-form:focus {
+  &:focus {
     border-color: var(--accent-color);
     outline: none;
+  }
 }
 
 .subs-button {

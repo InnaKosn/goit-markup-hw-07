@@ -3,12 +3,14 @@
     align-items: baseline;
 }
 
-.present-elem:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .present-elem {
     width: 270px;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 .present-ikon {

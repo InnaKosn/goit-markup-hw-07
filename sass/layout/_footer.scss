@@ -46,9 +46,9 @@
     color: rgba(255, 255, 255, 0.6);
 
     transition: color var(--transition-dur-and-func);
-}
 
-.foot-link:hover,
-.foot-link:focus {
+  &:hover,
+  &:focus {
     color: var(--accent-color);
+  }
 }

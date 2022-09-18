@@ -26,16 +26,16 @@
     background-color: #ffffff;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.modal-close-btn:focus,
-.modal-close-btn:hover {
-    cursor: pointer;
-}
+    &:focus,
+    &:hover {
+            cursor: pointer;
+        }
 
-.modal-close-btn:focus .modal-close-icon,
-.modal-close-btn:hover .modal-close-icon {
-    fill: var(--accent-color);
+    &:focus .modal-close-icon,
+    &:hover .modal-close-icon {
+     fill: var(--accent-color);
+        }
 }
 
 .modal-header {
@@ -62,17 +62,17 @@
     cursor: pointer;
     color: var(--secondary-color);
     transition: border-color var(--transition-dur-and-func);
-}
 
-.modal-form-input:focus+.form-name-icon {
+
+  &:focus+.form-name-icon {
     fill: var(--accent-color);
     cursor: pointer;
-}
+  }
 
-.modal-form-input:focus {
+  &:focus {
     outline: none;
     border-color: var(--accent-color);
-
+  }
 }
 
 .modal-form-span {
@@ -120,18 +120,18 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-dur-and-func);
-}
 
-.modal-form-coment:focus {
+
+  &:focus {
     outline: none;
     border-color: var(--accent-color);
     cursor: pointer;
-}
+  }
 
-.modal-form-coment::placeholder {
+  &::placeholder {
     color: rgba(117, 117, 117, 0.5);
+  }
 }
-
 .form-check-icon {
     height: 15px;
     width: 16px;
@@ -141,22 +141,8 @@
     border: 0.2px solid var(--secondary-color);
 }
 
-.modal-form-check:focus+.form-check-icon {
-    box-shadow: 0 0 0 2px var(--accent-color);
-}
-
 .form-check-vector {
     display: none;
-}
-
-.modal-form-check:checked+.form-check-icon {
-    background: var(--accent-color);
-    border-color: var(--alternativ-color);
-    box-shadow: none;
-}
-
-.modal-form-check:checked+.form-check-icon .form-check-vector {
-    display: block;
 }
 
 .modal-form-check {
@@ -166,6 +152,19 @@
     left: 0;
     margin-left: 20px;
     margin-top: 6px;
+
+  &:focus+.form-check-icon {
+    box-shadow: 0 0 0 2px var(--accent-color);
+   }
+  &:checked+.form-check-icon {
+     background: var(--accent-color);
+     border-color: var(--alternativ-color);
+     box-shadow: none;
+  
+        & .form-check-vector {
+          display: block;
+        }
+  }
 }
 
 .modal-form-check-line {
@@ -204,8 +203,9 @@
     color: var(--alternativ-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: box-shadow var(--transition-dur-and-func);
-}
 
-.modal-form-submit:focus {
+
+    &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
 }

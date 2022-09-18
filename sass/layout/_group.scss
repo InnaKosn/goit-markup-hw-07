@@ -15,14 +15,17 @@
 
     transition: border-color var(--transition-dur-and-func);
 
-}
-
-.group-link:hover,
-.group-link:focus {
+  &:hover,
+  &:focus {
     border-color: var(--accent-color);
-}
+  }
 
-.group-link:hover .group-icon,
-.group-link:focus .group-icon {
+  &:hover .group-icon,
+  &:focus .group-icon {
     fill: var(--accent-color);
+  }
+}
+.group-icon {
+  fill: #afb1b8;
+  transition: fill var(--transition-dur-and-func);
 }

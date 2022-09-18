@@ -52,23 +52,21 @@
     transition: background-color var(--transition-dur-and-func);
 
     border-radius: 50%;
-}
 
-.network-list-link:hover,
-.network-list-link:focus {
+
+  &:hover,
+  &:focus {
     background-color: var(--accent-color);
+  }
+  &:hover .network-list-icon,
+  &:focus .network-list-icon {
+    fill: var(--alternativ-color);
+  }
 }
 
-.network-list-icon,
-.group-icon {
+.network-list-icon {
     fill: #afb1b8;
     transition: fill var(--transition-dur-and-func);
-
-}
-
-.network-list-link:hover .network-list-icon,
-.network-list-link:focus .network-list-icon {
-    fill: var(--alternativ-color);
 }
 
 .team-elem {
