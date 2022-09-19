@@ -1,11 +1,11 @@
-.present-list {
+.examples {
     display: flex;
     align-items: baseline;
 }
 
 
 
-.present__elem {
+.examples__elem {
     width: 270px;
 
     &:not(:last-child) {
@@ -13,7 +13,7 @@
         }
 }
 
-.present__ikon {
+.examples__wrapper {
     display: flex;
     height: 120px;
     align-items: center;
@@ -23,7 +23,7 @@
     border-radius: 4px;
 }
 
-.present-title {
+.examples-title {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
@@ -31,7 +31,7 @@
     color: var(--secondary-color);
 }
 
-.present-tekst {
+.examples-text {
     font-weight: 400;
     line-height: 1.71;
 }
